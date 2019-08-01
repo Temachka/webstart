@@ -346,6 +346,11 @@ img {
   margin-bottom: 32px;
   width: 240px;
   height: 65px;
+  outline: none;
+}
+
+.offer__input:focus {
+  border-color: orange;
 }
 
 .offer__input:first-child {
