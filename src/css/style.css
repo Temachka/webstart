@@ -424,6 +424,9 @@ img {
   .offer {
     background-size: cover;
   }
+  .offer-info {
+    font-size: 13px;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
