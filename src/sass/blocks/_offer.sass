@@ -56,7 +56,41 @@
       font-size: 13px    
 @media (max-width: 768px)  
   .offer 
+    padding-top: 20px
     background: #ffffff
     &-block 
       width: 100%
       padding-right: 0
+@media (max-width: 568px)  
+  .offer 
+    margin-left: 8px
+    padding-top: 14px
+    background: #ffffff
+    &-info 
+      margin-left: 6px
+      display: flex
+      flex-direction: column
+      margin-top: 20px
+      &__phone 
+        margin-top: 8px
+    &__title
+      line-height: 1.2
+      margin-top: 32px
+      font-size: 18px
+      width: 260px
+    &__subtitle 
+      font-size: 14px
+      margin-bottom: 28px  
+    &-block 
+      width: 100%
+      padding-right: 0     
+    &__input 
+      padding: 26px 160px 27px 23px
+      width: 100%
+      margin-bottom: 8px
+    &__button 
+      padding-left: 50px
+      padding-right: 50px
+      font-size: 14px   
+      line-height: 18px
+      +bold 
