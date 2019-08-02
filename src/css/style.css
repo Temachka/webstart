@@ -371,6 +371,10 @@ img {
   font-size: 15px;
 }
 
+.offer-info__manager {
+  width: 200px;
+}
+
 .offer-info__phone {
   margin-right: 12px;
 }
@@ -397,13 +401,13 @@ img {
 }
 
 .offer__title {
-  max-width: 360px;
+  width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
 }
 
 .offer__subtitle {
-  max-width: 250px;
+  width: 250px;
   margin-bottom: 30px;
 }
 
@@ -450,13 +454,39 @@ img {
     padding-top: 20px;
     background: #ffffff;
   }
+  .offer__title {
+    width: 100%;
+  }
+  .offer__subtitle {
+    width: 100%;
+  }
   .offer-block {
     width: 100%;
     padding-right: 0;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 440px) {
+  .offer-info {
+    margin-left: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .offer-info__call {
+    margin-top: 10px;
+  }
+  .offer__phone {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 324px) {
   .offer {
     margin-left: 8px;
     padding-top: 14px;

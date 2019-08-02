@@ -10,6 +10,8 @@
     line-height: 24px
     margin-top: 24px
     font-size: 15px
+    &__manager 
+      width: 200px
     &__phone
       margin-right: 12px
     &__number 
@@ -27,11 +29,11 @@
     padding-right: 90px
     position: relative
   &__title 
-    max-width: 360px
+    width: 360px
     line-height: 35px
     margin-bottom: 20px
   &__subtitle 
-    max-width: 250px
+    width: 250px
     margin-bottom: 30px
   &__input 
     margin-bottom: 32px
@@ -60,10 +62,25 @@
   .offer 
     padding-top: 20px
     background: #ffffff
+    &__title 
+      width: 100%
+    &__subtitle 
+      width: 100%  
     &-block 
       width: 100%
       padding-right: 0
-@media (max-width: 320px)  
+@media (max-width: 440px)  
+  .offer 
+    &-info 
+      margin-left: 6px
+      display: flex
+      flex-direction: column
+      margin-top: 20px
+      &__call
+        margin-top: 10px
+    &__phone 
+      margin-top: 8px
+@media (max-width: 324px)  
   .offer 
     margin-left: 8px
     padding-top: 14px
