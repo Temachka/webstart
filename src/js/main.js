@@ -6,6 +6,14 @@ button.addEventListener('click', function() {
   modal.classList.add('modal_active');
 });
 
-close.addEventListener('click', function() {
+/* close.addEventListener('click', function() {
   modal.classList.remove('modal_active');
-});
+}); */
+
+/* setInterval(function() {
+  modal.classList.remove('modal_active');
+}, 5000); */
+
+setTimeout(function() {
+  modal.classList.remove('modal_active');
+}, 5000);
