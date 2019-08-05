@@ -20,18 +20,3 @@ button.addEventListener('click', function() {
 close.addEventListener('click', function() {
   modal.classList.remove('modal_active');
 });
-
-// button.addEventListener('click', function() {
-//   modal.classList.add('modal_active');
-//   timer = setTimeout(function() {
-//     modal.classList.remove('modal_active');
-//   }, 5000);
-// });
-
-// function stoptimer() {
-//   clearTimeout(timer);
-// }
-
-// close.addEventListener('click', function() {
-//   modal.classList.remove('modal_active');
-// });

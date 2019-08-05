@@ -51,6 +51,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
+  outline: none;
   padding: 19px 30px 17px 30px;
 }
 
@@ -79,6 +80,15 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.return {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Импорт стилей шапки */
