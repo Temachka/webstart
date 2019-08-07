@@ -29,6 +29,7 @@ img
   &-title 
     font-size: 24px
     +bold
+    text-align: center
   &-subtitle 
     font-size: 16px
     display: block
@@ -38,9 +39,12 @@ img
   font-size: 15px
   border-radius: 10px    
 .return 
-  position: fixed
   bottom: 0
   left: 0
   margin: 50px
   width: 50px
   height: 50px
+.arrows 
+  &__left, &__right
+    &:hover
+      cursor: pointer     
