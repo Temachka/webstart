@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="../src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+  <link rel="stylesheet" href="../src/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
 </head>
 <body>
   
@@ -108,36 +109,35 @@
 
     <section class="section portfolio">
       <div class="container">
-        <h2 class="section-title portfolio__title">Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</h2>
-
-        <div class="slider">
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Картинка"></div>
-          <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Картинка"></div>
-          <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Картинка"></div>
-          <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Картинка"></div>
-          <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Картинка"></div>
-          <!-- /.slider__item -->
-          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Картинка"></div>
-          <!-- /.slider__item -->
-        </div>
-        
-        <div class="arrows portfolio__arrows">
-          <div class="arrows__left">
-            <img src="img/portfolio/left-arrow.png" alt="">
-          </div>
-          <div class="arrows__right">
-            <img src="img/portfolio/right-arrow.png" alt="">
-          </div>
-        </div>
-        <!-- /.slider -->
-
+          <h2 class="section-title portfolio__title">Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</h2>
       </div>
-    </section>
+    
 
+    <div class="owl-carousel owl-theme owl-loaded">
+      <div class="owl-stage-outer">
+        <div class="owl-stage">
+          <div class="owl-item">
+            <img src="img/portfolio/slider-1.jpg" alt="" class="owl-carousel__image">
+          </div>
+          <div class="owl-item">
+            <img src="img/portfolio/slider-2.jpg" alt="" class="owl-carousel__image">
+          </div> 
+          <div class="owl-item">
+            <img src="img/portfolio/slider-3.jpg" alt="" class="owl-carousel__image">
+          </div>       
+          <div class="owl-item">
+            <img src="img/portfolio/slider-1.jpg" alt="" class="owl-carousel__image">
+          </div>
+          <div class="owl-item">
+            <img src="img/portfolio/slider-2.jpg" alt="" class="owl-carousel__image">
+          </div> 
+          <div class="owl-item">
+            <img src="img/portfolio/slider-3.jpg" alt="" class="owl-carousel__image">
+          </div>   
+        </div>
+      </div>
+    </div>
+  </section>
 
   </main>
 
@@ -176,32 +176,21 @@
   <script src="js/modal.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
   <script>
-    $(document).ready(function() {
-      $('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
-        responsive: [
-          {
-            breakpoint: 900,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 1280,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-        ]
-      });
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        items: 3,
+        margin: 30,
+        loop: true,
+        center: true,
+        nav: true,
+        dots: false,
+        autoWidth: true,
+        merge: true
+      })
     });
   </script>
-
 </body>
 </html>
