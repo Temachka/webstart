@@ -23,7 +23,7 @@
             <a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button onclick="myFunction()" class="button navbar__button" id="button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button_call">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -83,11 +83,13 @@
             <!-- /.section-title -->
             <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
             <!-- /.section-subtitle -->
-            <form action="#" class="form offer__form">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tell" class="input offer__input" placeholder="Ваш телефон">
-              <button class="button offer__button">Получить бесплатный дизайн-проект</button>
-            </form>
+            <form action="mail.php" method="POST" id="offer-form" class="form offer__form">
+              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+              <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+              <button id="button" class="button offer__button">Получить бесплатный дизайн-проект</button>
+            </form>              <br>
+            <div class="success"></div>
+            <!-- /.form offer__form -->
             <div class="offer-info">
               <div class="offer-info__manager">Наш менеджер перезвонит Вам в течение 60 секунд</div>
               <div class="offer-info__phone">
@@ -95,7 +97,6 @@
                 <div class="offer-info__number">+7 (495) 42-251-31</div>
               </div>
             </div>
-            <!-- /.form offer__form -->
         </div>
         <!-- /.offer-block -->
       </div>
@@ -106,20 +107,38 @@
 
   <div class="modal" id="modal">
     <div class="modal-dialog">
-      <button onclick="myStopFunction()" class="modal-dialog__close" id="close">&times;</button>
-      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal-dialog__title">Спасибо за заявку, скоро мы вам перезвоним.</h4>
     </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
+
+  <div class="modal-call" id="modal-call">
+    <div class="box-call">
+      <button class="box-call__close" id="close_call">&times;</button>
+      <span class="box-call__title">Узнайте точную стоимость ремонта по телефону!</span> 
+      <span class="box-call__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+      <input type="text" class="input box-call__input" placeholder="Ваше имя">
+      <input type="tel" class="input box-call__input" placeholder="Ваш телефон">
+      <button class="button box-call__button">Узнать стоимость</button>
+      <span class="box-call__info">Или Вы можете перезвонить нам сами по телефону:</span>
+      <span class="box-call__number">+7 (8182) 42-51-31</span>
+    </div>
+    <!-- /.box-call -->
+  </div>
+  <!-- /.modal-call -->
+
   <div class="return"><a href="#home" class="scrollto"><img src="img/arrow_top.svg" alt=""></a></div>
 
-  <script src="js/main.js"></script>
+  
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="js/modal-call.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>
