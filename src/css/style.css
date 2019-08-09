@@ -586,6 +586,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 1200px;
+  margin: auto;
 }
 
 .slider__image {
