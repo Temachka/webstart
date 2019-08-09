@@ -24,27 +24,4 @@ $(document).ready(function() {
 });
 
 
-{/* <div class="slider">
-<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Картинка"></div>
-<!-- /.slider__item -->
-<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Картинка"></div>
-<!-- /.slider__item -->
-<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Картинка"></div>
-<!-- /.slider__item -->
-<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Картинка"></div>
-<!-- /.slider__item -->
-<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Картинка"></div>
-<!-- /.slider__item -->
-<div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Картинка"></div>
-<!-- /.slider__item -->
-</div>
-
-<div class="arrows portfolio__arrows">
-<div class="arrows__left">
-  <img src="img/portfolio/left-arrow.png" alt="">
-</div>
-<div class="arrows__right">
-  <img src="img/portfolio/right-arrow.png" alt="">
-</div>
-</div>
-<!-- /.slider -->  */}
+/**/
