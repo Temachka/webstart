@@ -394,6 +394,10 @@ img {
   padding: 50px 0;
 }
 
+.offer__form {
+  margin-left: -10px;
+}
+
 .offer-info {
   margin-bottom: 40px;
   display: -webkit-box;
@@ -850,6 +854,8 @@ img {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y ,no-repeat;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .brif-block {
@@ -873,6 +879,7 @@ img {
 .brif__input {
   outline: none;
   width: 100%;
+  height: 65px;
   max-width: 370px;
   margin-bottom: 15px;
 }
@@ -886,11 +893,12 @@ img {
 }
 
 .interview {
-  padding-right: 71px;
+  padding-right: 60px;
 }
 
 .interview__title {
-  margin-bottom: 50px;
+  line-height: 33px;
+  margin-bottom: 44px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -919,6 +927,10 @@ img {
   margin-bottom: 25px;
 }
 
+.interview-list__item:last-child {
+  margin-top: 38px;
+}
+
 .interview-list__counter {
   display: inline-block;
   text-align: center;
@@ -926,18 +938,26 @@ img {
   width: 35px;
   height: 35px;
   border: 2px solid #333333;
-  margin-right: 30px;
+  margin-right: 34px;
   border-radius: 50%;
   font-size: 14px;
 }
 
 .interview-list__text {
   max-width: 400px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.form {
+  margin-left: 10px;
 }
 
 .form__title {
-  margin-bottom: 50px;
+  margin-top: 16px;
+  margin-bottom: 46px;
   font-size: 22px;
+  line-height: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -945,7 +965,7 @@ img {
 .form__subtitle {
   font-size: 16px;
   display: block;
-  margin-bottom: 94px;
+  margin-bottom: 52px;
 }
 
 .form__description {
@@ -1017,7 +1037,7 @@ img {
     padding-left: 0;
   }
   .interview__title {
-    width: 400px;
+    width: 300px;
     font-size: 18px;
   }
   .interview__subtitle {
