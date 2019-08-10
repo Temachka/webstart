@@ -312,6 +312,52 @@
   </section>
   <!-- /.section steps -->
 
+  <section class="section brif">
+    <div class="container">
+      <div class="brif-block">
+        <div class="interview brif__interview">
+          <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h3>
+          <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+          <ul class="interview-list">
+            <li class="li interview-list__item">
+              <span class="interview-list__counter">1</span>
+              <span class="interview-list__text">Какова площадь помещения?</span>
+            </li>
+            <li class="li interview-list__item">
+              <span class="interview-list__counter">2</span>
+              <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span>
+            </li>
+            <li class="li interview-list__item">
+              <span class="interview-list__counter">3</span>
+              <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span>
+            </li>
+            <li class="li interview-list__item">
+              <span class="interview-list__counter">4</span>
+              <span class="interview-list__text">Назначение помещения?</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.interview brif__interview -->
+        <div class="form brif__form">
+          <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
+          <span class="form__subtitle">Для этого заполните форму ниже</span>
+          <form action="#" id="brif-form">
+            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" id="phone" class="input brif__input" placeholder="Ваш телефон">
+            <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
+            <button class="button brif__button">Узнать стоимость</button>
+            <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
+            <!-- /.button brif__button -->
+          </form>
+        </div>
+        <!-- /.form brif__form -->
+      </div>
+      <!-- /.brif-block -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section brif -->
+
   </main>
 
   <div class="modal" id="modal">
@@ -351,10 +397,47 @@
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
   <script>
     /* Инициализация WOW.js */
     new WOW().init();
-
+    /* Валидация формы */
+    $(document).ready(function () {
+      $('#phone').mask("8(999)999-99-99",{placeholder:""});
+      $('#brif-form').validate({     
+        errorClass: "invalid",
+        errorElement: "div",
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+          },
+          phone: {
+            required: true,
+          },
+          email: {
+            required: true,
+            email: true,
+          }
+        },
+        messages: {
+          username: {
+            required: "Укажите ваше имя",
+            minlength: "Минимальная длина 2 символа",
+            maxlength: "Максимальная длина 15 символов"
+          },
+          email: {
+            required: "Укажите ваш email",
+            email: "Введите корректный email"
+          },
+          phone: {
+            required: "Укажите ваш телефон"
+          }
+        }
+      });
+    });
   </script>
   <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
   <!-- <script>
