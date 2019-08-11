@@ -89,7 +89,7 @@
             <!-- /.section-subtitle -->
             <form action="mail.php" method="POST" id="offer-form" class="offer__form">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-              <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+              <input type="tell" name="phone" id="phone" class="input offer__input" placeholder="Ваш телефон">
               <button id="button" class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>              <br>
             <div class="success"></div>
@@ -343,7 +343,7 @@
           <span class="form__subtitle">Для этого заполните форму ниже</span>
           <form action="#" id="brif-form">
             <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" id="phone" class="input brif__input" placeholder="Ваш телефон">
+            <input type="tel" name="phone" id="brif__phone" class="input brif__input" placeholder="Ваш телефон">
             <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
             <button class="button brif__button">Расчитать стоимость</button>
             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
@@ -370,16 +370,16 @@
   <!-- /.modal -->
 
   <div class="modal-call" id="modal-call">
-    <div class="box-call">
+    <form action="#" id="box-call" class="box-call">
       <button class="box-call__close" id="close_call">&times;</button>
       <span class="box-call__title">Узнайте точную стоимость ремонта по телефону!</span> 
       <span class="box-call__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <input type="text" class="input box-call__input" placeholder="Ваше имя">
-      <input type="tel" class="input box-call__input" placeholder="Ваш телефон">
+      <input type="text" class="input box-call__input" name="username" placeholder="Ваше имя">
+      <input type="tel" class="input box-call__input" name="phone" id="modal__phone" placeholder="Ваш телефон">
       <button class="button box-call__button">Узнать стоимость</button>
       <span class="box-call__info">Или Вы можете перезвонить нам сами по телефону:</span>
       <span class="box-call__number">+7 (8182) 42-51-31</span>
-    </div>
+    </form>
     <!-- /.box-call -->
   </div>
   <!-- /.modal-call -->
@@ -397,47 +397,13 @@
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/validation.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
   <script>
     /* Инициализация WOW.js */
     new WOW().init();
-    /* Валидация формы */
-    $(document).ready(function () {
-      $('#phone').mask("8(999)999-99-99",{placeholder:""});
-      $('#brif-form').validate({     
-        errorClass: "invalid",
-        errorElement: "div",
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15,
-          },
-          phone: {
-            required: true,
-          },
-          email: {
-            required: true,
-            email: true,
-          }
-        },
-        messages: {
-          username: {
-            required: "Укажите ваше имя",
-            minlength: "Минимальная длина 2 символа",
-            maxlength: "Максимальная длина 15 символов"
-          },
-          email: {
-            required: "Укажите ваш email",
-            email: "Введите корректный email"
-          },
-          phone: {
-            required: "Укажите ваш телефон"
-          }
-        }
-      });
-    });
+    
   </script>
   <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
   <!-- <script>

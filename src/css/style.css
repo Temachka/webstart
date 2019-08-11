@@ -394,10 +394,6 @@ img {
   padding: 50px 0;
 }
 
-.offer__form {
-  margin-left: -10px;
-}
-
 .offer-info {
   margin-bottom: 40px;
   display: -webkit-box;
@@ -852,7 +848,7 @@ img {
 .brif {
   background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y ,no-repeat;
   padding-top: 80px;
   padding-bottom: 30px;
@@ -1322,6 +1318,7 @@ img {
 }
 
 .box-call__input {
+  outline: none;
   width: 370px;
   height: 65px;
 }
