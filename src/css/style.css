@@ -100,6 +100,7 @@ img {
 }
 
 #username-error {
+  margin-top: 10px;
   margin-bottom: 10px;
   border: none;
   display: block;
@@ -107,6 +108,18 @@ img {
 
 #phone-error {
   margin-bottom: 10px;
+  display: block;
+  border: none;
+}
+
+#brif__phone-error {
+  margin-bottom: 10px;
+  display: block;
+  border: none;
+}
+
+#modal__phone-error {
+  margin-top: 10px;
   display: block;
   border: none;
 }
@@ -1276,7 +1289,7 @@ img {
   background-color: #fff;
   border: 2px solid #ffffff;
   width: 570px;
-  height: 674px;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
