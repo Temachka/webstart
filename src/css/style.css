@@ -29,6 +29,11 @@ img {
   max-width: 100%;
 }
 
+.bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 .container {
   width: 1170px;
   margin: auto;
@@ -1392,6 +1397,107 @@ img {
   }
   .footer-container {
     margin: 0;
+  }
+}
+
+/* Стили для блока repair */
+.repair {
+  padding: 0;
+  margin-top: 12px;
+}
+
+.repair__image {
+  width: 370px;
+  height: 270px;
+}
+
+.repair-block {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 100px;
+  margin-bottom: 143px;
+}
+
+.repair-block__card {
+  margin: auto;
+  margin-bottom: 31px;
+  width: 370px;
+  height: 410px;
+  background-color: #f7f7f7;
+}
+
+.repair-block__card__text {
+  padding-top: 4px;
+  padding-left: 26px;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 50px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.repair-head {
+  background-image: url("/src/img/repair/yellow-background.png");
+  padding-top: 90px;
+  padding-bottom: 92px;
+  text-align: center;
+}
+
+.repair-head__title {
+  margin: auto;
+  font-size: 32px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .repair-head__title {
+    width: 500px;
+    line-height: 1.4;
+    font-size: 22px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 568px) {
+  .repair__image {
+    width: 272px;
+    height: 193px;
+  }
+  .repair-block {
+    margin-top: 59px;
+    margin-bottom: 50px;
+  }
+  .repair-block__card {
+    width: 272px;
+    height: 300px;
+  }
+  .repair-block__card__text {
+    font-size: 12px;
+    line-height: 16.83px;
+    margin-bottom: 38px;
+  }
+  .repair-head {
+    padding-top: 72px;
+    padding-bottom: 76px;
+  }
+  .repair-head__title {
+    width: 260px;
+    line-height: 1.25;
+    font-size: 18px;
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
   }
 }
 

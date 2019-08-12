@@ -1,0 +1,67 @@
+.repair
+  padding: 0
+  margin-top: 12px
+  &__image
+    width: 370px
+    height: 270px
+  &-block
+    flex-wrap: wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-top: 100px
+    margin-bottom: 143px
+    &__card
+      margin: auto
+      margin-bottom: 31px
+      width: 370px
+      height: 410px
+      background-color: #f7f7f7
+      &__text
+        padding-top: 4px
+        padding-left: 26px
+        font-size: 16px
+        line-height: 23px
+        margin-bottom: 50px
+        +reg
+  &-head
+    background-image: url("/src/img/repair/yellow-background.png")
+    padding-top: 90px
+    padding-bottom: 92px
+    text-align: center
+    &__title
+      margin: auto
+      font-size: 32px
+      +reg
+      line-height: 50px
+@media (max-width: 768px)
+  .repair
+    &-head
+      &__title
+        width: 500px
+        line-height: 1.4
+        font-size: 22px
+        +bold      
+@media (max-width: 568px)
+  .repair
+    &__image
+      width: 272px
+      height: 193px
+    &-block
+      margin-top: 59px
+      margin-bottom: 50px
+      &__card
+        width: 272px
+        height: 300px
+        &__text
+          font-size: 12px
+          line-height: 16.83px
+          margin-bottom: 38px
+    &-head
+      padding-top: 72px
+      padding-bottom: 76px
+      &__title
+        width: 260px
+        line-height: 1.25
+        font-size: 18px
+        +reg    
