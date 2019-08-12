@@ -1453,11 +1453,28 @@ img {
 }
 
 .repair-head__title {
+  width: 907px;
   margin: auto;
   font-size: 32px;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
   line-height: 50px;
+}
+
+@media (max-width: 1200px) {
+  .repair-block__card:last-child {
+    margin-top: 15px;
+  }
+  .repair-head__title {
+    width: 700px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .repair-block__card {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1498,6 +1515,15 @@ img {
     font-size: 18px;
     font-family: 'Museo Sans Light', sans-serif;
     font-weight: 300;
+  }
+}
+
+@media (max-width: 568px) {
+  .repair-block__card {
+    margin-bottom: 31px;
+  }
+  .repair-block__card__text {
+    width: 250px;
   }
 }
 
