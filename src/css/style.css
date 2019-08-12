@@ -1429,13 +1429,13 @@ img {
 
 .repair-block__card {
   margin: auto;
-  margin-bottom: 31px;
   width: 370px;
   height: 410px;
   background-color: #f7f7f7;
 }
 
 .repair-block__card__text {
+  width: 320px;
   padding-top: 4px;
   padding-left: 26px;
   font-size: 16px;
