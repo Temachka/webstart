@@ -1446,7 +1446,7 @@ img {
 }
 
 .repair-head {
-  background-image: url("/src/img/repair/yellow-background.png");
+  background-color: #ffd200;
   padding-top: 90px;
   padding-bottom: 92px;
   text-align: center;
