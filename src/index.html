@@ -28,7 +28,7 @@
             <a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button_call">Перезвоните мне</button>
+          <button class="button navbar__button" id="button_call" onclick="ym(54887764, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -88,7 +88,7 @@
             <!-- /.section-title -->
             <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
             <!-- /.section-subtitle -->
-            <form action="mail.php" method="POST" id="offer-form" class="offer__form">
+            <form action="mail.php" method="POST" id="offer-form" class="offer__form" onsubmit="ym(54887764, 'reachGoal', 'form'); return true;">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
               <input type="tell" name="phone" id="phone" class="input offer__input" placeholder="Ваш телефон">
               <button id="button" class="button offer__button">Получить бесплатный дизайн-проект</button>
