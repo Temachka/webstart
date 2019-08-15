@@ -13,9 +13,19 @@ img
   .container
     width: 760px
 @media (max-width: 780px)
+  .return 
+    display: block
+    bottom: 0
+    right: 0
+    margin: 20px
+    +bold
   .container
     width: 580px
     width: 90%
+.scrollto
+  text-decoration: none
+  outline: none    
+  color: #000000
 .button
   border-radius: 10px
   background-color: $main-color   
@@ -39,13 +49,6 @@ img
   padding: 20px 26px
   font-size: 15px
   border-radius: 10px    
-.return 
-  display: block
-  bottom: 0
-  right: 0
-  margin: 50px
-  width: 50px
-  height: 50px
 .arrows 
   &__left, &__right
     &:hover

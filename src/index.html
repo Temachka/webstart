@@ -5,27 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/animate.css">
+
   <link rel="stylesheet" href="css/style.css">
-  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54887764, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54887764" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  
   <!-- <link rel="stylesheet" href="../src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
   <link rel="stylesheet" href="../src/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"> -->
 </head>
+
 <body>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<6d548525-1e75-417a-9cc0-a1991825d75d>&lang=ru_RU" type="text/javascript"></script>
+      <!-- Yandex.Metrika counter -->
+       <script
+        type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54887764, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); 
+      </script>
+    
+      <noscript>
+        <div><img src="https://mc.yandex.ru/watch/54887764" style="position:absolute; left:-9999px;" alt="" /></div>
+      </noscript>
+      <!-- /Yandex.Metrika counter -->
   
   <nav id="home" class="navbar">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
-          <img src="img/logo.png" alt="Логотип">
+          <img src="img/logo.jpg" alt="Логотип">
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar__info">
           <div class="navbar__contacts">
             <span class="navbar__address">Калуга, Москва, МО</span>
-            <a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
+            <a href="#" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
           <button class="button navbar__button" id="button_call" onclick="ym(54887764, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
@@ -72,7 +81,7 @@
           </div>
           <!-- /.hero-list -->
           <div class="hero-image">
-            <img src="img/hero/hero-image.png" alt="План квартиры" class="hero-image wow fadeInRight" data-wow-delay="0.3s">
+            <img src="img/hero/hero-image.jpg" alt="План квартиры" class="hero-image wow fadeInRight" data-wow-delay="0.3s">
           </div>
           <!-- /.hero-image -->
         </div>
@@ -90,7 +99,7 @@
             <!-- /.section-subtitle -->
             <form action="mail.php" method="POST" id="offer-form" class="offer__form" onsubmit="ym(54887764, 'reachGoal', 'form'); return true;">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-              <input type="tell" name="phone" id="phone" class="input offer__input" placeholder="Ваш телефон">
+              <input type="tel" name="phone" id="phone" class="input offer__input" placeholder="Ваш телефон">
               <button id="button" class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>              <br>
             <div class="success"></div>
@@ -176,7 +185,7 @@
       <!-- /.section-subtitle price__subtitle -->
       <div class="cards">
         <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
-          <div class="card__image"><img src="img/price/bathroom.png" alt="" class="price__image"></div>
+          <div class="card__image"><img src="img/price/bathroom.jpg" alt="" class="price__image"></div>
           <!-- /.card__image -->
           <div class="card__text">
             <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
@@ -188,7 +197,7 @@
         </div>
         <!-- /.card -->
         <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
-          <div class="card__image"><img src="img/price/living.png" alt="" class="price__image"></div>
+          <div class="card__image"><img src="img/price/living.jpg" alt="" class="price__image"></div>
           <!-- /.card__image -->
           <div class="card__text">
             <h4 class="card__title">Ремонт комнат и квартир</h4>
@@ -200,7 +209,7 @@
         </div>
         <!-- /.card -->
         <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
-          <div class="card__image"><img src="img/price/office.png" alt="" class="price__image"></div>
+          <div class="card__image"><img src="img/price/office.jpg" alt="" class="price__image"></div>
           <!-- /.card__image -->
           <div class="card__text">
             <h4 class="card__title">Отделка офисных помещений</h4>
@@ -212,7 +221,7 @@
         </div>
         <!-- /.card -->
         <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
-          <div class="card__image"><img src="img/price/buildings.png" alt="" class="price__image"></div>
+          <div class="card__image"><img src="img/price/buildings.jpg" alt="" class="price__image"></div>
           <!-- /.card__image -->
           <div class="card__text">
             <h4 class="card__title">Ремонт в новостройках</h4>
@@ -224,7 +233,7 @@
         </div>
         <!-- /.card -->
         <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
-          <div class="card__image"><img src="img/price/kitchen.png" alt="" class="price__image"></div>
+          <div class="card__image"><img src="img/price/kitchen.jpg" alt="" class="price__image"></div>
           <!-- /.card__image -->
           <div class="card__text">
             <h4 class="card__title">Ремонт кухонь</h4>
@@ -236,7 +245,7 @@
         </div>
         <!-- /.card -->
         <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
-          <div class="card__image"><img src="img/price/houses.png" alt="" class="price__image"></div>
+          <div class="card__image"><img src="img/price/houses.jpg" alt="" class="price__image"></div>
           <!-- /.card__image -->
           <div class="card__text">
             <h4 class="card__title">Ремонт дач и коттеджей</h4>
@@ -417,7 +426,7 @@
                 <img src="img/footer/phone-call-button.png" alt="">
               </span> 
               <span class="contacts-list__text">Телефон:    <br>
-                  <a href="tel:+ 7 (495) 42-251-31" class="contacts-list__phone">+ 7 (495) 42-251-31</a></span>
+                  <a href="#" class="contacts-list__phone">+ 7 (495) 42-251-31</a></span>
             </li>
             <!-- /.contacts-list__item -->
           </ul>
@@ -430,7 +439,9 @@
 
     
   </footer>
-  <div class="return"><a href="#home" class="scrollto"><img src="img/arrow_top.svg" alt=""></a></div>
+  <div class="return">
+    <a href="#home" class="scrollto button">Наверх</a>
+  </div>
 
   <div class="modal" id="modal">
     <div class="modal-dialog">
@@ -470,7 +481,6 @@
   <script src="js/validation.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<b47f94cc-5df1-4d3f-bd46-9222f39a2da5>&lang=ru_RU" type="text/javascript"></script>
   <script src="js/placemark.js"></script>
   <script>
     /* Инициализация WOW.js */
